@@ -57,6 +57,14 @@ struct OpeningBraceRuleExamples {
             if c /* comment */ {
                 return
             }
+        """),
+        Example("""
+            if
+                "test".isEmpty
+            // swiftlint:disable:next opening_brace
+            {
+                // code here
+            }
         """)
     ]
 
